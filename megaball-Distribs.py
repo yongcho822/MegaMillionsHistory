@@ -1,6 +1,4 @@
 
-# coding: utf-8
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -47,7 +45,7 @@ plt.ylabel("# of draws", fontsize = 10)
 
 textstr = 'Total Draws = {0}'.format(len(firstperiod))
 props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-ax1.text(18, 15, textstr, fontsize=7.25,
+ax1.text(17.25, 15, textstr, fontsize=7.25,
         verticalalignment='top', color="blue", bbox=props)
 
 
@@ -60,7 +58,7 @@ plt.ylabel("# of draws", fontsize = 10)
 
 textstr = 'Total Draws = {0}'.format(len(secondperiod))
 props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-ax2.text(26, 15, textstr, fontsize=7.25,
+ax2.text(25, 15, textstr, fontsize=7.25,
         verticalalignment='top', color="blue", bbox=props)
 
 
@@ -74,7 +72,7 @@ plt.ylabel("# of draws", fontsize = 10)
 
 textstr = 'Total Draws = {0}'.format(len(thirdperiod))
 props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-ax3.text(37.5, 13, textstr, fontsize=7.25,
+ax3.text(36, 13, textstr, fontsize=7.25,
         verticalalignment='top', color="blue", bbox=props)
 
 
@@ -87,7 +85,7 @@ plt.ylabel("# of draws", fontsize = 10)
 
 textstr = 'Total Draws = {0}'.format(len(fourthperiod))
 props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-ax4.text(33, 28, textstr, fontsize=7.25,
+ax4.text(31.5, 28, textstr, fontsize=7.25,
         verticalalignment='top', color="blue", bbox=props)
 
 
@@ -99,7 +97,7 @@ plt.ylabel("# of draws", fontsize = 10)
 
 textstr = 'Total Draws = {0}'.format(len(fifthperiod))
 props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-ax5.text(11.5, 16, textstr, fontsize=7.25,
+ax5.text(11, 16.5, textstr, fontsize=7.25,
         verticalalignment='top', color="blue", bbox=props)
 
 
@@ -110,5 +108,4 @@ plt.subplots_adjust(top = 0.85, wspace = 0.75, hspace = 0.5)
 
 plt.savefig("megaball_Distribs.png")
 plt.show()
-
 
