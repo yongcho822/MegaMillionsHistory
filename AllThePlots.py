@@ -42,7 +42,6 @@ fifthperiod = firstreadin[firstreadin.date > fourthtime]
 
 
 # In[7]:
-
 #plotting distribution
 
 fig = plt.figure()
@@ -54,12 +53,25 @@ plt.xticks(range(0,26,5), range(0,26,5), rotation="horizontal")
 plt.title('MegaBall Distrib \'96 - \'99')
 plt.ylabel("# of draws", fontsize = 10)
 
+textstr = 'Total Draws = {0}'.format(len(firstperiod))
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+ax1.text(18, 15, textstr, fontsize=7.25,
+        verticalalignment='top', color="blue", bbox=props)
+
+
 ax2 = plt.subplot2grid((3,4), (0,2), colspan=2) 
 secondperiod.megaball.plot(kind='hist', bins = 36)
 ax2.set_xlim(0, 36)
 plt.xticks(range(0,36,5), range(0,41,5), rotation="horizontal")
 plt.title('MegaBall Distrib \'99 - \'02')
 plt.ylabel("# of draws", fontsize = 10)
+
+textstr = 'Total Draws = {0}'.format(len(secondperiod))
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+ax2.text(26, 15, textstr, fontsize=7.25,
+        verticalalignment='top', color="blue", bbox=props)
+
+
 
 ax3 = plt.subplot2grid((3,4), (1,0), colspan=2) 
 thirdperiod.megaball.plot(kind='hist', bins = 52)
@@ -68,6 +80,12 @@ plt.xticks(range(0,55,5), range(0,55,5), rotation="horizontal")
 plt.title('MegaBall Distrib \'02 - \'05')
 plt.ylabel("# of draws", fontsize = 10)
 
+textstr = 'Total Draws = {0}'.format(len(thirdperiod))
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+ax3.text(37.5, 13, textstr, fontsize=7.25,
+        verticalalignment='top', color="blue", bbox=props)
+
+
 ax4 = plt.subplot2grid((3,4), (1,2), colspan=2)
 fourthperiod.megaball.plot(kind='hist', bins = 46)
 ax4.set_xlim(0, 46)
@@ -75,11 +93,24 @@ plt.xticks(range(0,50,5), range(0,50,5),rotation="horizontal")
 plt.title('MegaBall Distrib \'05 - \'13')
 plt.ylabel("# of draws", fontsize = 10)
 
+textstr = 'Total Draws = {0}'.format(len(fourthperiod))
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+ax4.text(33, 28, textstr, fontsize=7.25,
+        verticalalignment='top', color="blue", bbox=props)
+
+
 ax5 = plt.subplot2grid((3,4), (2,1), colspan=2)
 fifthperiod.megaball.plot(kind='hist', bins = 15)
 plt.xticks(rotation="horizontal")
 plt.title('MegaBall Distrib \'13 - ')
 plt.ylabel("# of draws", fontsize = 10)
+
+textstr = 'Total Draws = {0}'.format(len(fifthperiod))
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+ax5.text(11.5, 16, textstr, fontsize=7.25,
+        verticalalignment='top', color="blue", bbox=props)
+
+
 
 plt.tight_layout(w_pad = 2, h_pad = 2)
 
@@ -87,6 +118,7 @@ plt.subplots_adjust(top = 0.85, wspace = 0.75, hspace = 0.5)
 
 plt.savefig("megaball_Distribs.png")
 plt.show()
+
 
 
 # In[ ]:
