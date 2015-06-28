@@ -1,8 +1,4 @@
 
-# coding: utf-8
-
-# In[7]:
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -114,39 +110,5 @@ plt.subplots_adjust(top = 0.85, wspace = 0.75, hspace = 0.5)
 
 plt.savefig("megaball_PMF.png")
 plt.show()
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
-
-
-
-# In[ ]:
-
 
 
